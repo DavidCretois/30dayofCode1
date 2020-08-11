@@ -1,4 +1,4 @@
-# 👾  30dayofCode1 👨‍💻
+# 👾  30dayofCode1 👨‍💻 🎯
 
 <h2 align="center">I'm learning many languages by a challenge 30DayOfCode !</h2>
 <h3>➡️ Well, this "30DayofCode" project is very important for all developers to succeed in learning several computer languages. My goal is to learn Python, JavaScript, Flutter, Angular and React JS and also HTML5&CSS. I'll put some files that I made you can see days and steps.⬅️</h3>
