@@ -7,10 +7,10 @@
 <p><b>✔️ 2 day</b> : Python Time + Location + Day</p>
 <p><b>🔘 3 day</b> : Python Number Guessing</p>
 <p><b>🔘 4 day</b> : Python Password Generator</p>
-<p><b>🔘 5 day</b> : Python Email Slicer Automation</p>
+<p><b>🔘 5 day</b> : Python Email Slicer Automation Tkinter</p>
 <p><b>🔘 6 day</b> : Python Snake Game</p>
-<p><b>🔘 7 day</b> : Python Chat App</p>
-<p><b>🔘 8 day</b> : Flutter Calculator</p>
+<p><b>🔘 7 day</b> : Python Open Windows</p>
+<p><b>🔘 8 day</b> : Python Chat App</p>
 <p><b>🔘 9 day</b> : Flutter Login UI</p>
 <p><b>🔘 10 day</b> : Flutter TikTok UI</p>
 <p><b>🔘 11 day</b> : Flutter Blog App</p>
