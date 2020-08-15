@@ -4,8 +4,8 @@
 <h3>➡️ Well, this "30DayofCode" project is very important for all developers to succeed in learning several computer languages. My goal is to learn Python, JavaScript, Flutter, Angular and React JS and also HTML5&CSS. I'll put some files that I made you can see days and steps.⬅️</h3>
 
 <p><b>✔️ 1 day</b> : Python GUI Calculator</p>
-<p><b>✔️ 2 day</b> : Python Time + Location + Day</p>
-<p><b>🔘 3 day</b> : Python Number Guessing</p>
+<p><b>✔️ 2 day</b> : Python GUI Time + Location + Day</p>
+<p><b>🔘 3 day</b> : Python GUI Windows and Scollbar</p>
 <p><b>🔘 4 day</b> : Python Password Generator</p>
 <p><b>🔘 5 day</b> : Python Email Slicer Automation Tkinter</p>
 <p><b>🔘 6 day</b> : Python Snake Game</p>
