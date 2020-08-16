@@ -5,7 +5,7 @@
 
 <p><b>✔️ 1 day</b> : Python GUI Calculator</p>
 <p><b>✔️ 2 day</b> : Python GUI Time + Location + Day</p>
-<p><b>🔘 3 day</b> : Python GUI Windows and Scollbar</p>
+<p><b>✔️ 3 day</b> : Python Password "Confirm" or "Refused" </p>
 <p><b>🔘 4 day</b> : Python Password Generator</p>
 <p><b>🔘 5 day</b> : Python Email Slicer Automation Tkinter</p>
 <p><b>🔘 6 day</b> : Python Snake Game</p>
