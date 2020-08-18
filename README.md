@@ -6,7 +6,7 @@
 <p><b>✔️ 1 day</b> : Python GUI Calculator</p>
 <p><b>✔️ 2 day</b> : Python GUI Time + Location + Day</p>
 <p><b>✔️ 3 day</b> : Python Password "Confirm" or "Refused" </p>
-<p><b>🔘 4 day</b> : Python GUI with MySQL Databases Lists (Name, date, location)</p>
+<p><b>✔️ 4 day</b> : Python GUI Students Management without SQL</p>
 <p><b>🔘 5 day</b> : Python GUI Login System  </p>
 <p><b>🔘 6 day</b> : Python GUI with Databases Students Management </p>
 <p><b>🔘 7 day</b> : Python GUI Build my App !</p>
