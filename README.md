@@ -31,5 +31,5 @@
 <p><b>🔘 26 day</b> : Vue Quiz App
 <p><b>🔘 27 day</b> : Vue Chat App
 <p><b>🔘 28 day</b> : Vue E-Commerce
-<p><b>🔘 29 day</b> : HTML Build a Site Web for Portfolio
+<p><b>🔘 29 day</b> : HTML Buildhy a Site Web for Portfolio
 <p><b>🔘 30 day</b> : HTML Build a Site web for E-Commerce
