@@ -7,8 +7,8 @@
 <p><b>✔️ 2 day</b> : Python GUI Time + Location + Day</p>
 <p><b>✔️ 3 day</b> : Python Password "Confirm" or "Refused" </p>
 <p><b>✔️ 4 day</b> : Python GUI Students Management without SQL</p>
-<p><b>🔘 5 day</b> : PAUSE Study Innovation STI  </p>
-<p><b>🔘 6 day</b> : Python GUI with Databases Students Management </p>
+<p><b>🔘 5 day</b> : Python GUI   </p>
+<p><b>🔘 6 day</b> : Python GUI Menubar for simulation MCU </p>
 <p><b>🔘 7 day</b> : Python GUI Build my App !</p>
 <p><b>🔘 8 day</b> : JavaScript Clock</p>
 <p><b>🔘 9 day</b> : JavaScript Calculator</p>
