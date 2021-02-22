@@ -1,14 +1,15 @@
-"""
-Day 6 - Aujourd'hui, je travaille sur la création des menus avec Tkinter Python
-J'essaye de réaliser des menus pour une simulation d'un microctrôleur comme Raspberry ou Arduino
-"""
 from tkinter import *
-
+import tkinter.font as tkFont
+import  tkinter as tk
 root = Tk()
-root.geometry("600x300")
+root.geometry("1200x300")
 root.title( "Simulation MCU 1.0v" )
-
+root.config(bg="#BABEC2")
 menubar = Menu(root,bg="red")
+
+
+fontExample = tkFont.Font(family="Arial", size=16, weight="bold", slant="italic")
+
 
 #Menu pour la commande "Fichier"
 filemenu = Menu(menubar,tearoff=0,activeborderwidth=10)
