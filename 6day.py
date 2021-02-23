@@ -1,4 +1,7 @@
+import random
 from tkinter import *
+from math import *
+from time import *
 import tkinter.font as tkFont
 import  tkinter as tk
 from tkinter import PhotoImage
@@ -9,29 +12,75 @@ root.title( "Simulation MCU 1.0v" )
 root.config(bg="#100e17")
 menubar = Menu(root,bg="red")
 
+def openAT91():
+    new_window = Toplevel(root)
+    new_window.geometry("250x400")
+    new_window.title("Atmel AT91")
+    new_window.resizable(True)
+    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl.pack
+    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
+    ButtonExit.place(50, 50)
+    ButtonExit.pack()
+
+def openAT91():
+    new_window = Toplevel(root)
+    new_window.geometry("250x400")
+    new_window.title("Atmel AT91")
+    new_window.resizable(True)
+    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl.pack
+    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
+    ButtonExit.place(50, 50)
+    ButtonExit.pack()
+
+def openAT91():
+    new_window = Toplevel(root)
+    new_window.geometry("250x400")
+    new_window.title("Atmel AT91")
+    new_window.resizable(True)
+    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl.pack
+    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
+    ButtonExit.place(50, 50)
+    ButtonExit.pack()
+
+def openAT91():
+    new_window = Toplevel(root)
+    new_window.geometry("250x400")
+    new_window.title("Atmel AT91")
+    new_window.resizable(True)
+    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl.pack
+    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
+    ButtonExit.place(50, 50)
+    ButtonExit.pack()
+
+
 # Les boutons
-Button1 = Button(root, text="Atmel AT91", padx=50, pady=8, bg="#6B7A89")
+Button1 = Button(root, text="Atmel AT91", padx=60, pady=8, bg="#6B7A89")
 Button1.place(x=10, y =80)
 
-Button2 = Button(root, text="ARM Cortex-M", padx=50, pady=8, bg="#6B7A89")
+
+Button2 = Button(root, text="ARM Cortex-M", padx=60, pady=8, bg="#6B7A89")
 Button2.place(x=10, y =130)
 
-Button3 = Button(root, text="Atmel AVR", padx=50, pady=8, bg="#6B7A89")
+Button3 = Button(root, text="Atmel AVR", padx=60, pady=8, bg="#6B7A89")
 Button3.place(x=250, y =80)
 
-Button4 = Button(root, text="C167", padx=50, pady=8, bg="#6B7A89")
+Button4 = Button(root, text="C167", padx=60, pady=8, bg="#6B7A89")
 Button4.place(x=250, y =130)
 
-Button5 = Button(root, text="Intel 8051", padx=50, pady=8, bg="#6B7A89")
+Button5 = Button(root, text="Intel 8051", padx=60, pady=8, bg="#6B7A89")
 Button5.place(x=10, y =180)
 
-Button6 = Button(root, text="Intel 8051", padx=50, pady=8, bg="#6B7A89")
+Button6 = Button(root, text="Intel 8051", padx=60, pady=8, bg="#6B7A89")
 Button6.place(x=10, y =230)
 
-Button7 = Button(root, text="Freescal 68HC11", padx=50, pady=8, bg="#6B7A89")
+Button7 = Button(root, text="Freescal 68HC11", padx=60, pady=8, bg="#6B7A89")
 Button7.place(x=250, y =180)
 
-Button8 = Button(root, text="Freescale 68HC12", padx=50, pady=8, bg="#6B7A89")
+Button8 = Button(root, text="Freescale 68HC12", padx=60, pady=8, bg="#6B7A89")
 Button8.place(x=250, y =230)
 
 
@@ -58,7 +107,7 @@ editmenu.add_command(label="Supprimer",activebackground="red")
 
 #Menu pour la commande "Microcontrôleurs"
 helpmenu = Menu(menubar,tearoff=0,activeborderwidth=5)
-helpmenu.add_command(label="Atmel AT91")
+helpmenu.add_command(label="Atmel AT91", command=openAT91)
 helpmenu.add_command(label="ARM Cortex-M")
 helpmenu.add_command(label="Atmel AVR")
 helpmenu.add_command(label="C167")
