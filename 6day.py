@@ -1,14 +1,38 @@
 from tkinter import *
 import tkinter.font as tkFont
 import  tkinter as tk
+from tkinter import PhotoImage
+
 root = Tk()
-root.geometry("1200x300")
+root.geometry("800x400")
 root.title( "Simulation MCU 1.0v" )
-root.config(bg="#BABEC2")
+root.config(bg="#100e17")
 menubar = Menu(root,bg="red")
 
+# Les boutons
+Button1 = Button(root, text="Atmel AT91", padx=50, pady=8, bg="#6B7A89")
+Button1.place(x=10, y =80)
 
-fontExample = tkFont.Font(family="Arial", size=16, weight="bold", slant="italic")
+Button2 = Button(root, text="ARM Cortex-M", padx=50, pady=8, bg="#6B7A89")
+Button2.place(x=10, y =130)
+
+Button3 = Button(root, text="Atmel AVR", padx=50, pady=8, bg="#6B7A89")
+Button3.place(x=250, y =80)
+
+Button4 = Button(root, text="C167", padx=50, pady=8, bg="#6B7A89")
+Button4.place(x=250, y =130)
+
+Button5 = Button(root, text="Intel 8051", padx=50, pady=8, bg="#6B7A89")
+Button5.place(x=10, y =180)
+
+Button6 = Button(root, text="Intel 8051", padx=50, pady=8, bg="#6B7A89")
+Button6.place(x=10, y =230)
+
+Button7 = Button(root, text="Freescal 68HC11", padx=50, pady=8, bg="#6B7A89")
+Button7.place(x=250, y =180)
+
+Button8 = Button(root, text="Freescale 68HC12", padx=50, pady=8, bg="#6B7A89")
+Button8.place(x=250, y =230)
 
 
 #Menu pour la commande "Fichier"
