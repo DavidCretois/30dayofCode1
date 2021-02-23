@@ -2,20 +2,60 @@ import random
 from tkinter import *
 from math import *
 from time import *
+from tkinter import filedialog
+from tkinter import font
 import tkinter.font as tkFont
-import  tkinter as tk
-from tkinter import PhotoImage
+import  tkinter as tkr
 
 root = Tk()
 root.geometry("800x400")
 root.title( "Simulation MCU 1.0v" )
-root.config(bg="#100e17")
+root.config(bg="#ABB2B9")
 menubar = Menu(root,bg="red")
+global open_status_name
+open_status_name = False
+
+# Sauvegarder le fichier
+def save_file():
+    file = filedialog.asksaveasfile()
+
+# Ouvrir le fichier
+def open_file():
+    file = filedialog.askopenfile()
+
+# Fermer le fichier
+def close_file():
+    file = filedialog.asksaveasfilename()
 
 def openAT91():
     new_window = Toplevel(root)
-    new_window.geometry("250x400")
+    new_window.geometry("1200x800")
+    new_window.config(bg="#ABB2B9")
     new_window.title("Atmel AT91")
+    new_window.resizable(True)
+    photoMCU = PhotoImage(file='C:\\Users\\NaKoO\Desktop\\Learn To code\\Project Developers\\Tkinter Python\\Project Software\\images\\AT91.png')
+    label = Label(new_window, image=photoMCU)
+    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl.pack
+    pic = "C:\\Users\\NaKoO\Desktop\\Learn To code\\Project Developers\\Tkinter Python\\Project Software\\images\\AT91.png"
+    pic1 = new_window.Image.open(pic)
+    photo = new_window.PhotoImage(pic1)
+    label1 = new_window.Label(root, image=photo)
+def ARMCortexM():
+    new_window = Toplevel(root)
+    new_window.geometry("1200x800")
+    new_window.title("ARM Cortex-M")
+    new_window.resizable(False)
+    lbl = Label(new_window, text="Microcontrôleur ARM")
+    lbl.pack
+    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
+    ButtonExit.place(50, 50)
+    ButtonExit.pack()
+
+def AtmelAVR():
+    new_window = Toplevel(root)
+    new_window.geometry("1200x800")
+    new_window.title("Atmel AVR")
     new_window.resizable(True)
     lbl = Label(new_window, text="Microcontrôleur ATMEL")
     lbl.pack
@@ -23,34 +63,12 @@ def openAT91():
     ButtonExit.place(50, 50)
     ButtonExit.pack()
 
-def openAT91():
+def C167():
     new_window = Toplevel(root)
-    new_window.geometry("250x400")
-    new_window.title("Atmel AT91")
+    new_window.geometry("1200x800")
+    new_window.title("C167")
     new_window.resizable(True)
-    lbl = Label(new_window, text="Microcontrôleur ATMEL")
-    lbl.pack
-    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
-    ButtonExit.place(50, 50)
-    ButtonExit.pack()
-
-def openAT91():
-    new_window = Toplevel(root)
-    new_window.geometry("250x400")
-    new_window.title("Atmel AT91")
-    new_window.resizable(True)
-    lbl = Label(new_window, text="Microcontrôleur ATMEL")
-    lbl.pack
-    ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
-    ButtonExit.place(50, 50)
-    ButtonExit.pack()
-
-def openAT91():
-    new_window = Toplevel(root)
-    new_window.geometry("250x400")
-    new_window.title("Atmel AT91")
-    new_window.resizable(True)
-    lbl = Label(new_window, text="Microcontrôleur ATMEL")
+    lbl = Label(new_window, text="Microcontrôleur C167")
     lbl.pack
     ButtonExit = Button(new_window, background="blue", text="Annuler", command=lambda: new_window.destroy())
     ButtonExit.place(50, 50)
@@ -87,10 +105,10 @@ Button8.place(x=250, y =230)
 #Menu pour la commande "Fichier"
 filemenu = Menu(menubar,tearoff=0,activeborderwidth=10)
 filemenu.add_command(label="Créer fichier")
-filemenu.add_command(label="Fermer le fichier")
-filemenu.add_command(label="Ouvrir le fichier")
-filemenu.add_command(label="Ouvrir le dossier")
-filemenu.add_command(label="Sauvegarder")
+filemenu.add_command(label="Fermer le fichier", command=close_file)
+filemenu.add_command(label="Ouvrir le fichier", command=open_file)
+filemenu.add_command(label="Ouvrir le dossier", command=open_file)
+filemenu.add_command(label="Sauvegarder", command=save_file)
 filemenu.add_command(label="Imprimer")
 filemenu.add_command(label="Options")
 filemenu.add_command(label="Quitter",activebackground="#F13535", command=root.destroy)
@@ -107,17 +125,17 @@ editmenu.add_command(label="Supprimer",activebackground="red")
 
 #Menu pour la commande "Microcontrôleurs"
 helpmenu = Menu(menubar,tearoff=0,activeborderwidth=5)
-helpmenu.add_command(label="Atmel AT91", command=openAT91)
-helpmenu.add_command(label="ARM Cortex-M")
-helpmenu.add_command(label="Atmel AVR")
-helpmenu.add_command(label="C167")
-helpmenu.add_command(label="Intel 8051")
-helpmenu.add_command(label="Intel 8051")
-helpmenu.add_command(label="Intel 8085")
-helpmenu.add_command(label="Freescal 68HC11")
-helpmenu.add_command(label="Freescale 68HC12")
-helpmenu.add_command(label="MSP430")
-helpmenu.add_command(label="8080")
+helpmenu.add_command(label="Atmel AT91", command=openAT91,activebackground="#C0392B")
+helpmenu.add_command(label="ARM Cortex-M", command=ARMCortexM,activebackground="#E74C3C")
+helpmenu.add_command(label="Atmel AVR", command=AtmelAVR,activebackground="#9B59B6")
+helpmenu.add_command(label="C167", command=C167,activebackground="#8E44AD")
+helpmenu.add_command(label="Intel 8051",activebackground="#2980B9")
+helpmenu.add_command(label="Intel 8051", activebackground="#3498DB")
+helpmenu.add_command(label="Intel 8085", activebackground="#16A085")
+helpmenu.add_command(label="Freescal 68HC11", activebackground="#27AE60")
+helpmenu.add_command(label="Freescale 68HC12", activebackground="#F1C40F")
+helpmenu.add_command(label="MSP430", activebackground="#F39C12")
+helpmenu.add_command(label="8080", activebackground="#D35400")
 
 # Menu pour la commande "Modèles Raspberry Pi"
 modelemenu = Menu(menubar,tearoff=0,activeborderwidth=5)
