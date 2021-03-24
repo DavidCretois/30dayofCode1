@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Web Terminal Dave</title>
+	</head>
+
+<style> 
+	html,body{
+		padding: 0px;
+		margin: 0px;
+		background: rgb(45, green, blue)
+	}
+
+	#terminal{
+		position: relative;
+		height: 300px;
+		width: 500px;
+		background-color: #000;
+		margin: 150px auto;
+		border-radius: 14px;
+		box-shadow: 1px 2px 26px rgba(0, 0, 0, 0.3);
+	}
+
+	#terminal #header {
+		position: absolute;
+		height: 50px;
+		width: 100%;
+		background: lightgrey;
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+	}
+
+	#terminal #header span {
+		position: absolute;
+		height: 22px;
+		width: 22%;
+		border-radius: 50%;
+		box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3)
+	}
+
+	#terminal #header span:nth-child(1) {
+		background-color: red;
+		top: 15px;
+		left: 7px;
+	}
+
+	#terminal #header span:nth-child(2) {
+		background-color: orange;
+		top: 15px;
+		left: 45px;
+	}
+
+	#terminal #header span:nth-child(3) {
+		background-color: green;
+		top: 15px;
+		left: 84px;
+	}
+
+	#terminal #body {
+		position: absolute;
+		top: 50px;
+		overflow: hidden;
+	}
+
+	#terminal #body p {
+		font-family: "lato", sans-serif;
+		color: blue;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 2px;
+		margin-left: 10px;
+	}
+
+	#terminal #body #txt {
+		position: absolute;
+		height: 50px;
+		width: 100%;
+		background: orangered;
+		top: 20px;
+		left: 0px;
+		animation: type 5s ease-in-out 1;
+	}
+
+	#terminal #body p span{
+		font-size: 28px;
+		animation: blink .4s ease-in infinite;
+	}
+	/**************************/
+
+	@keyframes types {
+		top {
+			left: 400px;
+		}
+	}
+
+	@keyframes blink{
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 0.6;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+</style>
+
+
+<body>
+	<div id="terminal">
+		<div id="header">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="body">
+			<p>I'm web designer &spades; <span>_</span></p>
+			<div id="txt"></div>
+		</div>
+	</div>
+</body>
+</html>
